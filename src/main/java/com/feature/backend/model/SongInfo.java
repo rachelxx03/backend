@@ -10,26 +10,34 @@ import javax.persistence.Id;
 public class SongInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int Id;
+    private int Ranking;
     private int year;
     private String Song;
     private String Artist;
     private String Lyric;
 
-    public SongInfo(int id, int year, String song, String artist, String lyric) {
-        Id = id;
+    public SongInfo(int ranking, int year, String song, String artist, String lyric) {
+        Ranking = ranking;
         this.year = year;
         Song = song;
         Artist = artist;
         Lyric = lyric;
     }
 
-    public int getId() {
-        return Id;
+    public SongInfo() {
+        Ranking = 0;
+        this.year = 0;
+        Song ="";
+        Artist = "";
+        Lyric = "";
     }
 
-    public void setId(int id) {
-        Id = id;
+    public int getRanking() {
+        return Ranking;
+    }
+
+    public void setRanking(int ranking) {
+        Ranking = ranking;
     }
 
     public int getYear() {
