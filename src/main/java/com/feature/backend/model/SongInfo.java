@@ -10,35 +10,13 @@ import javax.persistence.Id;
 public class SongInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int Ranking;
+
     private int year;
     private String Song;
     private String Artist;
     private String Lyric;
 
-    public SongInfo(int ranking, int year, String song, String artist, String lyric) {
-        Ranking = ranking;
-        this.year = year;
-        Song = song;
-        Artist = artist;
-        Lyric = lyric;
-    }
 
-    public SongInfo() {
-        Ranking = 0;
-        this.year = 0;
-        Song ="";
-        Artist = "";
-        Lyric = "";
-    }
-
-    public int getRanking() {
-        return Ranking;
-    }
-
-    public void setRanking(int ranking) {
-        Ranking = ranking;
-    }
 
     public int getYear() {
         return year;
@@ -71,4 +49,6 @@ public class SongInfo {
     public void setLyric(String lyric) {
         Lyric = lyric;
     }
+
+
 }
