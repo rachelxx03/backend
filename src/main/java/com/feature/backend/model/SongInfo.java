@@ -11,13 +11,14 @@ public class SongInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
+    private int ranking;
 
-    private int year;
     private String Song;
     private String Artist;
+    private int year;
     private String Lyric;
 
-    private int ranking;
+
 
     public int getRanking() {
         return ranking;
