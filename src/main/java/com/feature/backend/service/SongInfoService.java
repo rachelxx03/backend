@@ -17,5 +17,5 @@ public interface SongInfoService {
      String concatLyrics();
 
 
-
+    List<SongInfo> findAll();
 }

@@ -1,12 +1,9 @@
 package com.feature.backend.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-
+@Table(name = "song_info")
 public class SongInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
