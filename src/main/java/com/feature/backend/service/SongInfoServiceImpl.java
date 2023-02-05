@@ -13,8 +13,11 @@ public class SongInfoServiceImpl implements SongInfoService{
 
     @Autowired
     private  SongInfoRepository songInfoRepository;
-    @Override
-    public List<SongInfo> getallsonginfo() {
-        return songInfoRepository.findAll();
+
+
+    public String findLyricsByRankingAndYearBetween(int startYear, int endYear){
+        return songInfoRepository.findLyricsByRankingAndYearBetween(startYear,endYear);
     }
+
+
 }
