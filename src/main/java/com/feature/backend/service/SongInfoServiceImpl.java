@@ -17,4 +17,9 @@ public class SongInfoServiceImpl implements SongInfoService{
     public List<SongInfo> getallsonginfo() {
         return songInfoRepository.findAll();
     }
+
+    @Override
+    public String findCombinedLyricsByRankIntervalAndYearInterval(int rankStart, int rankEnd, int yearStart, int yearEnd) {
+        return songInfoRepository.findCombinedLyricsByRankIntervalAndYearInterval( rankStart,  rankEnd,  yearStart,  yearEnd);
+    }
 }

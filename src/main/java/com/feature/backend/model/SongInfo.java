@@ -1,22 +1,27 @@
 package com.feature.backend.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-
 public class SongInfo {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int year;
+    @Id
+
+    private Long id;
+    private int ranking;
+
     private String Song;
     private String Artist;
+    private int year;
     private String Lyric;
 
+    public int getRanking() {
+        return ranking;
+    }
 
+    public void setRanking(int ranking) {
+        this.ranking = ranking;
+    }
 
     public int getYear() {
         return year;
@@ -51,4 +56,12 @@ public class SongInfo {
     }
 
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Id
+    public Long getId() {
+        return id;
+    }
 }
