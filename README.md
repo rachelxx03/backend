@@ -91,8 +91,5 @@ The above image indicates the lyrics are most similar to a top 25 song in the 19
 
 On this page you can type in lyrics (words separated by spaces in this instance) and then hit submit and the results should be tabulated indicating which quartile (0,1,2 or 3) your song lyrics look most similar to for each decade. It's not the most beautiful webpage, so feel free to improve it if you want (just don't break anything).
 
-You are also expected to provide testcases for 2 of the methods that you'll create in this assignment. Your testcases should be JUnit5 testcases, similar to those found in this assignment, the prior assignment and our labs. At the top of the file containing your testcases you should give enough details for the grader to determine what you are testing with each unit-test. (It is expected you may require 4 or 5 unit-tests for full coverage of whatever method you choose to test)
-
-You should start your code in the `OneHitWonderService` class. You don't need to read any of the other classes. You should create new classes as part of your solution if needed.
 
 
