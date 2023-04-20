@@ -43,13 +43,12 @@ cosine similarity = $\frac {song2 \cdot song3}{||song2|| ||song3||}  \approx 0.7
 
 A perfect match is 1 while orthogonal vectors will return 0 for their cosine similarity and numbers closer to 1 indicate vectors that are pointing in more similar directions. In the above the cosine similarity between song 1 and song 3 is larger than the cosine similarity between song 2 and song 3. Therefore song 3 is a closer match to song 1.
 
-For the purposes of our assignment if ever the cosine similarity involves a divide by zero we will simply consider the result to be zero.
 
 **The above should give an idea of how we might compare song lyrics to determine similarity**
 
 ## Overview
 
-In this assignment you are given a dataset of all of the billboard top 100 songs (and their lyrics (minus filler words)) from 1970 to 2009 (that's songs from the 1970's, 1980's, 1990's, and 2000's (4 decades!)).
+ you are given a dataset of all of the billboard top 100 songs (and their lyrics (minus filler words)) from 1970 to 2009 (that's songs from the 1970's, 1980's, 1990's, and 2000's (4 decades!)).
 
 Note: The dataset is missing a few songs (for example the number 25 song from 1970 is missing).
 
